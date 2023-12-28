@@ -45,4 +45,12 @@ window.onload = function(){
         document.getElementById("timeDisplay").innerHTML = "00:00:00";
         document.getElementById("begin").innerHTML = "Begin";
     });
+    document.getElementById('additionalReset').addEventListener('click', function(){
+        window.clearInterval(interval);
+        sec = 0;
+        min = 0;
+        hr = 0;
+        document.getElementById("timeDisplay").innerHTML = "00:00:00";
+        document.getElementById("begin").innerHTML = "Begin";
+    });
 };
